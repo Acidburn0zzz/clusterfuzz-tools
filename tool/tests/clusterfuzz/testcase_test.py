@@ -368,7 +368,7 @@ class GetPackageAndMainClassNamesTest(helpers.ExtendedTestCase):
     lines = [
         {'content': 'random'},
         {'content': (
-            'shell am start -a android.intent.action.VIEW -n '
+            '[Command line] shell am start -a android.intent.action.VIEW -n '
             'org.chromium.webview_shell/.WebViewBrowserActivity -d '
             "'file:///sdcard/fuzzer-testcases/fuzz-88.html'")}
     ]

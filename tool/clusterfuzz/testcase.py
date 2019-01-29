@@ -151,11 +151,11 @@ def get_package_and_main_class_names(stacktrace_lines):
   """Get package and main class names."""
   for line in stacktrace_lines:
     content = line['content'].strip()
-    if not content.startswith('shell am start'):
+    if 'shell am start' not in content:
       continue
 
     match = re.match(
-        r'shell am start -a [^\s]+ -n ([^/]+)/([^\s]+) .+', content)
+        r'.*shell am start -a [^\s]+ -n ([^/]+)/([^\s]+) .+', content)
 
     if match:
       return (match.group(1), match.group(2))
