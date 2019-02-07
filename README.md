@@ -1,5 +1,5 @@
-ClusterFuzz Reproduce Tool
-=================================
+ClusterFuzz Reproduce Tool for Chrome
+=====================================
 
 **This is is not the ClusterFuzz repo. That can be found [here](https://github.com/google/clusterfuzz). This is a tool for reproducing crashes in Chrome that were found by ClusterFuzz.** 
 
